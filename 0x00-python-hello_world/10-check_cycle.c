@@ -1,7 +1,3 @@
-#ifndef LISTS_H
-#define LISTS_H
-
-#include <stdlib.h>
 
 #include <stddef.h>
 #include "lists.h"
@@ -16,4 +12,4 @@ int check_cycle(listint_t *list){
    q = q->next;
 }
 return 1;
-#endif /* LISTS_H */
+}

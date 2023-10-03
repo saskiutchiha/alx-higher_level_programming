@@ -7,7 +7,7 @@ str3 = " and is less than 6 and not 0"
 if number < 0:
         last = number % -10
 else:
-            last = number % 10
+   last = number % 10
    if last > 5:
                     print("Last digit of {} is {}".format(number, last) + str1)
    elif last == 0:

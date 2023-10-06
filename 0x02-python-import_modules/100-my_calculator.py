@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-<<<<<<< HEAD
+
        from  calculator_1 import add 
        from  calculator_1 import sub 
        from  calculator_1 import div

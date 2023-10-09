@@ -4,5 +4,5 @@ def delete_at(my_list=[], idx=0):
     return my_list 
   L = my_list[:idx] + my_list[idx+1:]
   my_list = L
-  return my_ist
+  return my_list
   

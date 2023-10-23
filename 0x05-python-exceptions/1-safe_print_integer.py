@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def print_safe(val):
    try :
     print("{:d}".format(val))

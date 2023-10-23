@@ -8,3 +8,4 @@ def safe_print_list_integers(my_list=[], x=0):
           except TypeError:
              my_list = my_list[:a] + my_list[a+1:]
              continue  
+         return a          

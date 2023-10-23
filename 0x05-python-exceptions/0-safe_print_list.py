@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
+   try :  
     a = 0
     while a < x:
-        try :
-            print(my_list[a],end="")
-        except:
-            
-            break
-        a+=1
-    if (a<=x):
-        print("") 
-    return a      
+       print(my_list[a],end="")
+       a+=1
+    print("")  
+    return a    
+   except :
+       print("")
+     return a      

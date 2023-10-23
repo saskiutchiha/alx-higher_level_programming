@@ -5,8 +5,8 @@ def safe_print_list(my_list=[], x=0):
     while a < x:
        print(my_list[a],end="")
        a+=1
-    print("")  
+    print("\n")  
     return a    
    except :
-       print("")
+       print("\n")
        return a      

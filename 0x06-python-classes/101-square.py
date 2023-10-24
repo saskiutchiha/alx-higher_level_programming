@@ -57,3 +57,16 @@ class Square:
             [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for k in range(0, self.__size)]
             print("")
+    def __str__(self):
+           """
+           Custom string representation for the object.
+           Returns:
+           str: A formatted string representation of the square.
+           """
+           string = ""
+           for i in range(0, self.__size):
+            string += " "*self.position[0]
+            for j in range(self.__size):
+               string+="#"
+            string += '\n'
+           return string[:-1]    

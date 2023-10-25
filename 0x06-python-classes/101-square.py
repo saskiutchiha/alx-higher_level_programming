@@ -63,10 +63,4 @@ class Square:
            Returns:
            str: A formatted string representation of the square.
            """
-           string = ""
-           for i in range(0, self.__size):
-            string += " "*self.position[0]
-            for j in range(self.__size):
-               string+="#"
-            string += '\n'
-           return string[:-1]    
+           my_print(self)

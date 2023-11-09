@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def trinagle(n):
+def pascal_triangle(n):
     l = [[1]]
     if n <= 0 :
         return []

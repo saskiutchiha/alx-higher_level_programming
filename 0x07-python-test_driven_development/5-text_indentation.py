@@ -1,5 +1,15 @@
 #!/usr/bin/python3
+""" text_indentation returns "text" in the specified format:
+2 newlines after each ['.', '?', ':']
+"""
+
+
 def text_indentation(text):
+    """ prints "text" with 2 newlines after each of these char: ['.', '?', ':']
+    checks if "text" is a str
+    first loop removes spaces after each required chars
+    second loop adds 2 newlines after each required chars
+    """
     if not isinstance(text,str):
         raise TypeError("text must be a string")
     else :

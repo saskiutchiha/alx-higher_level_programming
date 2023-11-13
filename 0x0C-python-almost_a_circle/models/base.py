@@ -8,6 +8,6 @@ class Base:
         if (id != None):
             self.id = id
         else:
-            base.__nb_objects+=1
-            self.id = base.__nb_objects 
+            Base.__nb_objects+=1
+            self.id = Base.__nb_objects 
 

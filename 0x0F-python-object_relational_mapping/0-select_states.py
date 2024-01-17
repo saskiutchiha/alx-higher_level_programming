@@ -4,7 +4,7 @@
 
 import MySQLdb as my
 import sys 
-if __main__ == "__name__":
+if __name__ == "__main__":
  a = sys.argv()
  db = my.connect(host="localhost", port=3306, user=a[0], passwd=a[1], db=a[2])
  cursor = db.cursor()

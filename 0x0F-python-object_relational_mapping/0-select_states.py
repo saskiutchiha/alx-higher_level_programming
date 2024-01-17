@@ -3,10 +3,10 @@
 
 
 import MySQLdb as my
-import sys 
+import argv from sys 
 if __name__ == "__main__":
- a = sys.argv()
- db = my.connect(host="localhost", port=3306, user=a[1], passwd=a[2], db=a[3])
+ 
+ db = my.connect(host="localhost", port=3306, user=argv[1], passwd=argv[2], db=argv[3])
  cursor = db.cursor()
  cursor.execute("select * from states order by states.id;")
  for data in cursor :

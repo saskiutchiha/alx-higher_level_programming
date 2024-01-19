@@ -1,15 +1,22 @@
 #!/usr/bin/python3
-"lists all states"
+"""Lists all states with a name starting with N from the Database"""
 
+import sys
+from db_conn import connect_db
 
-import MySQLdb as my
-from sys import argv
+"""
+    the command line arguments provides the mysql auth credentials
+"""
+_args = sys.argv
+
 if __name__ == "__main__":
-
-     db = my.connect(host="localhost", port=3306, user=argv[1], passwd=argv[2], db=argv[3], charset="utf8")
-     cursor = db.cursor()
-     cursor.execute("select * from states where name like 'N%' order by states.id;")
-     for data in cursor :
-                print(data)
-     cursor.close()
-     db.close()
+    db = connect_db(_args[1:])
+    cur = db.cursor()
+    cur.execute(
+            "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC"
+            )
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+    cur.close()
+    db.close()
